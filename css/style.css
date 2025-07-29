@@ -60,6 +60,16 @@
   }
 }
 
+/* font  */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("../font/LeMajor/LeMajor-Regular.woff") format("woff"),
+    url("../font/LeMajor-Regular.ttf") format("truetype"),
+    url("../font/LeMajor-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Visibility Logic (same as before) */
 #spinner {
   opacity: 0;

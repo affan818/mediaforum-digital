@@ -37,8 +37,20 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
     <link href="css/style.css" rel="stylesheet">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
     <style>
+        /* about-section */
+        .icon-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .icon-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* about-section end  */
+
         .client-logo-section {
             overflow: hidden;
             background-color: #fff;
@@ -85,7 +97,113 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
         .shadow-sm {
             box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05) !important;
         }
+
+        /* Section Styling */
+        .achievements-section {
+            background: linear-gradient(to bottom right, #f7f9fc, #ffffff);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .section-title {
+            font-family: 'Le Major', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #111;
+        }
+
+        .section-subtitle {
+            font-size: 1rem;
+            display: inline-block;
+            background: #e0f7fa;
+            color: #00796b;
+            padding: 6px 20px;
+            border-radius: 999px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .counter-card {
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.05);
+            transition: all 0.4s ease;
+        }
+
+        .counter-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .counter {
+            font-family: 'Le Major', serif;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #00796b;
+            margin-bottom: 10px;
+        }
+
+        .metric {
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #333;
+        }
+
+        /* service section  */
+
+        .section-services {
+            background: #f7f9fb;
+        }
+
+        .subtitle {
+            font-family: "Playfair Display", serif;
+            font-size: 1rem;
+            color: #444;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .main-heading {
+            font-family: "Le Major", sans-serif;
+            font-size: 2.8rem;
+            font-weight: 600;
+            color: #222;
+            margin-bottom: 1rem;
+        }
+
+        .service-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 2rem 1.5rem;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease-in-out;
+            border: 1px solid #e6e6e6;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .service-card .icon {
+            font-size: 2.5rem;
+            color: #00796b;
+        }
+
+        .service-card h4 {
+            font-family: "Le Major", sans-serif;
+            font-size: 1.4rem;
+            margin: 1rem 0 0.5rem;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.6;
+        }
     </style>
+
 
     <script type="application/ld+json">
 {
@@ -202,69 +320,90 @@ logo: ""
 
     <!-- Get In Touch Start -->
 
-    <section class="about-us-section py-5 bg-light position-relative overflow-hidden">
-        <!-- Decorative Background -->
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dots z-n1"></div>
-
-        <div class="container py-5">
-            <div class="row g-5 align-items-center">
-                <!-- Left Content -->
-                <div class="col-lg-6">
-                    <span class="badge bg-white text-primary rounded-pill px-3 py-2 shadow-sm mb-3">About Us</span>
-                    <h2 class="display-5 fw-bold mb-3">Empowering Brands Through Digital Intelligence</h2>
-                    <p class="fs-5 text-muted" style="text-align: justify;">
+    <section class="py-5 bg-light position-relative overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left: Text Content -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="display-5 fw-bold mb-3" style="font-family: Le Major;">Empowering Brands
+                        Through <span class="display-6" style="font-family:Playwrite AU QLD">Digital Intelligence</span>
+                    </h2>
+                    <p class=" fs-5 text-muted" style="text-align: justify; font-family: Urbanist;">
                         Mediaforum Digital is not just another agency — we are your performance marketing partner.
                         With a strategic mix of creativity, data, and innovation, we help businesses stand out,
                         scale faster, and convert better.
                     </p>
-                    <a href="about.html" class="btn btn-primary rounded-pill px-4 py-3 mt-3">
-                        Discover Our Process <i class="bi bi-arrow-right ms-2"></i>
-                    </a>
                 </div>
 
-                <!-- Right Grid Cards (Replaces Counters) -->
+                <!-- Right: Icon Grid -->
                 <div class="col-lg-6">
-                    <div class="row g-4">
-                        <div class="col-md-6">
-                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
-                                <div class="mb-3">
-                                    <i class="bi bi-bar-chart-line-fill text-primary fs-2"></i>
+                    <div class="row text-center g-3">
+                        <div class="col-6">
+                            <div class="p-4 bg-white shadow rounded h-100 icon-hover">
+                                <div class="mb-2">
+                                    <i class="bi bi-bar-chart-line-fill fs-2 text-primary"></i>
                                 </div>
-                                <h6 class="fw-bold text-dark mb-1">Brands Empowered</h6>
-                                <p class="text-muted small mb-0">Over 100 businesses digitally transformed with us.</p>
+                                <h6 class="mb-0" style="font-family: 'Urbanist', sans-serif;">Performance Ads</h6>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
-                                <div class="mb-3">
-                                    <i class="bi bi-bullseye text-primary fs-2"></i>
+                        <div class="col-6">
+                            <div class="p-4 bg-white shadow rounded h-100 icon-hover">
+                                <div class="mb-2">
+                                    <i class="bi bi-bullseye fs-2 text-success"></i>
                                 </div>
-                                <h6 class="fw-bold text-dark mb-1">Ad Impressions</h6>
-                                <p class="text-muted small mb-0">2M+ ad impressions served across platforms.</p>
+                                <h6 class="mb-0" style="font-family: 'Urbanist', sans-serif;">Targeted Campaigns</h6>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
-                                <div class="mb-3">
-                                    <i class="bi bi-layers-fill text-primary fs-2"></i>
+                        <div class="col-6">
+                            <div class="p-4 bg-white shadow rounded h-100 icon-hover">
+                                <div class="mb-2">
+                                    <i class="bi bi-graph-up-arrow fs-2 text-danger"></i>
                                 </div>
-                                <h6 class="fw-bold text-dark mb-1">Industries Served</h6>
-                                <p class="text-muted small mb-0">Experience across 50+ business verticals.</p>
+                                <h6 class="mb-0" style="font-family: 'Urbanist', sans-serif;">SEO & Traffic</h6>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
-                                <div class="mb-3">
-                                    <i class="bi bi-clock-history text-primary fs-2"></i>
+                        <div class="col-6">
+                            <div class="p-4 bg-white shadow rounded h-100 icon-hover">
+                                <div class="mb-2">
+                                    <i class="bi bi-emoji-sunglasses fs-2 text-warning"></i>
                                 </div>
-                                <h6 class="fw-bold text-dark mb-1">Years of Experience</h6>
-                                <p class="text-muted small mb-0">8+ years delivering marketing success stories.</p>
+                                <h6 class="mb-0" style="font-family: 'Urbanist', sans-serif;">Creative Strategy</h6>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
 
 
+
+    <!-- Counter Section - Modern Elegant Style -->
+    <section class="achievements-section py-5">
+        <div class="container py-5 text-center">
+            <div class="mb-5" data-aos="fade-up">
+                <h5 class="section-subtitle">Our Achievements</h5>
+                <h2 class="section-title">Our <span style="font-family:Playwrite AU QLD">Growth</span> Metrics</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="counter-card">
+                        <h2 class="counter" id="leads-counter">0</h2>
+                        <p class="metric">Leads Generated</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="counter-card">
+                        <h2 class="counter" id="spend-counter">0</h2>
+                        <p class="metric">Advertising Spend</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mx-auto" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="counter-card">
+                        <h2 class="counter" id="clients-counter">0</h2>
+                        <p class="metric">Happy Clients</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -272,145 +411,96 @@ logo: ""
 
 
 
-    <!-- Counter Start -->
-    <div class="container-fluid py-5">
-        <div class="container text-center py-5">
-            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our
-                    Achievements</h5>
-                <h2 class="display-5">Our Growth Metrics</h2>
+
+
+
+
+
+    <!-- Services Section Start -->
+    <section class="section-services py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h5 class="subtitle">What We Offer</h5>
+                <h2 class="main-heading" style="font-family: Le Major">Our <span
+                        style="font-family:Playwrite AU QLD">Digital Marketing</span> Services</h2>
             </div>
-            <div class="row g-5">
-                <!-- Client Counter -->
-                <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="bg-light rounded p-5 counter-item">
-                        <h2 class="mb-0" id="clients-counter">0</h2>
-                        <p class="fs-5">Lead Generated</p>
-                    </div>
+            <div class="row g-4">
+                <!-- Service Card 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="socialmedia.html">
+                        <div class="service-card h-100 text-center">
+                            <div class="icon mb-3"><i class="fas fa-bullhorn"></i></div>
+                            <h4>Social Media Marketing</h4>
+                            <p>Grow your brand's presence and engagement with strategic campaigns across all social
+                                platforms.</p>
+                        </div>
+                    </a>
                 </div>
-                <!-- Projects Done Counter -->
-                <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="bg-light rounded p-5 counter-item">
-                        <h2 class="mb-0" id="projects-counter">0</h2>
-                        <p class="fs-5">Advertising Spend</p>
-                    </div>
-                </div>
-                <!-- Team Members Counter -->
-                <div class="col-xxl-4 col-lg-4 col-md-4 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="bg-light rounded p-5 counter-item">
-                        <h2 class="mb-0" id="team-counter">0</h2>
-                        <p class="fs-5">Number of Clients</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Counter End -->
 
-
-    <div class="client-logo-section">
-        <div class="logo-slider">
-            <div class="logo-track">
-                <!-- Duplicate logos for infinite effect -->
-                <div class="logo"><img src="img/client/devprath.png" alt="Client 1"></div>
-                <div class="logo"><img src="img/client/gandhi.png" alt="Client 2"></div>
-                <div class="logo"><img src="img/client/goverdhan.png" alt="Client 3"></div>
-                <div class="logo"><img src="img/client/kawc.png" alt="Client 4"></div>
-                <div class="logo"><img src="img/client/kukreja.png" alt="Client 6"></div>
-                <div class="logo"><img src="img/client/mahalaxmi.png" alt="Client 4"></div>
-                <div class="logo"><img src="img/client/mittal.png" alt="Client 8"></div>
-                <div class="logo"><img src="img/client/nanik.png" alt="Client 9"></div>
-                <div class="logo"><img src="img/client/navanirman-logo.png" alt="Client 10"></div>
-                <div class="logo"><img src="img/client/pankaj-logo.png" alt="Client 11"></div>
-                <div class="logo"><img src="img/client/rudra.png" alt="Client 12"></div>
-                <div class="logo"><img src="img/client/prasanna.png" alt="Client 13"></div>
-                <div class="logo"><img src="img/client/shivganga.png" alt="Client 14"></div>
-                <!-- Duplicates for smooth loop -->
-                <div class="logo"><img src="img/client/devprath.png" alt="Client 1"></div>
-                <div class="logo"><img src="img/client/gandhi.png" alt="Client 2"></div>
-                <div class="logo"><img src="img/client/goverdhan.png" alt="Client 3"></div>
-                <div class="logo"><img src="img/client/kawc.png" alt="Client 4"></div>
-                <div class="logo"><img src="img/client/kukreja.png" alt="Client 6"></div>
-                <div class="logo"><img src="img/client/mahalaxmi.png" alt="Client 4"></div>
-                <div class="logo"><img src="img/client/mittal.png" alt="Client 8"></div>
-                <div class="logo"><img src="img/client/nanik.png" alt="Client 9"></div>
-                <div class="logo"><img src="img/client/navanirman-logo.png" alt="Client 10"></div>
-                <div class="logo"><img src="img/client/pankaj-logo-.png" alt="Client 11"></div>
-                <div class="logo"><img src="img/client/rudra.png" alt="Client 12"></div>
-                <div class="logo"><img src="img/client/prasanna.png" alt="Client 13"></div>
-                <div class="logo"><img src="img/client/shivganga.png" alt="Client 14"></div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-    <!-- Project Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our
-                    Project</h5>
-                <p class="text-responsive">From the moment our company was founded, we have helped
-                    our clients find
-                    exceptional solutions for their businesses, creating memorable brands and digital products. Our
-                    expertise grows with each year, and our accumulated experience.</p>
-            </div>
-            <div class="row g-5">
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="project-item">
-                        <div class="project-left bg-dark"></div>
-                        <div class="project-right bg-dark"></div>
-                        <img src="img/paid-ad.jpg" class="img-fluid h-100" alt="img">
-                        <a href="paidads.html" class="fs-4 fw-bold text-center">Paid Advertising</a>
-                    </div>
+                <!-- Service Card 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="paidads.html">
+                        <div class="service-card h-100 text-center">
+                            <div class="icon mb-3"><i class="fas fa-chart-line"></i></div>
+                            <h4>Performance Ads</h4>
+                            <p>Get measurable results and ROI-driven advertising on Google, Meta, and beyond.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="project-item">
-                        <div class="project-left bg-dark"></div>
-                        <div class="project-right bg-dark"></div>
-                        <img src="img/seo.jpg" class="img-fluid h-100" alt="img">
-                        <a href="searchengine.html" class="fs-4 fw-bold text-center">Search Engine Optimization</a>
-                    </div>
+
+                <!-- Service Card 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="searchengine.html">
+                        <div class="service-card h-100 text-center">
+                            <div class="icon mb-3"><i class="fas fa-search-dollar"></i></div>
+                            <h4>SEO Optimization</h4>
+                            <p>Rank higher and reach more with targeted keyword strategies and search engine best
+                                practices.
+                            </p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="project-item">
-                        <div class="project-left bg-dark"></div>
-                        <div class="project-right bg-dark"></div>
-                        <img src="img/social-media.jpg" class="img-fluid h-100" alt="img">
-                        <a href="socialmedia.html" class="fs-4 fw-bold text-center">Social Media Marketing</a>
-                    </div>
+
+                <!-- Service Card 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="branding.html">
+                        <div class="service-card h-100 text-center">
+                            <div class="icon mb-3"><i class="fas fa-palette"></i></div>
+                            <h4>Creative Design</h4>
+                            <p>From posts to ads, get scroll-stopping graphics that convert and impress.</p>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="project-item">
-                        <div class="project-left bg-dark"></div>
-                        <div class="project-right bg-dark"></div>
-                        <img src="img/web-development.jpg" class="img-fluid h-100" alt="img">
-                        <a href="webdevelopment.html" class="fs-4 fw-bold text-center">Website Development</a>
-                    </div>
+
+                <!-- Service Card 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="shopify.html">
+                        <div class="service-card h-100 text-center">
+                            <div class="icon mb-3"><i class="fas fa-shopping-cart"></i></div>
+                            <h4>E-Commerce</h4>
+                            <p>Boost your online sales with strategic e-commerce marketing solutions.</p>
+                        </div>
+                    </a>
+
                 </div>
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="project-item">
-                        <div class="project-left bg-dark"></div>
-                        <div class="project-right bg-dark"></div>
-                        <img src="img/e-commerce.jpg" class="img-fluid h-100" alt="img">
-                        <a href="shopify.html" class="fs-4 fw-bold text-center">E-commerce</a>
-                    </div>
-                </div>
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="project-item">
-                        <div class="project-left bg-dark"></div>
-                        <div class="project-right bg-dark"></div>
-                        <img src="img/print-media.jpg" class="img-fluid h-100" alt="img">
-                        <a href="printmedia.html" class="fs-4 fw-bold text-center">Print Media Service</a>
-                    </div>
+
+                <!-- Service Card 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <a href="printmedia.html">
+                        <div class="service-card h-100 text-center">
+                            <div class="icon mb-3"><i class="fas fa-newspaper"></i></div>
+                            <h4>Print Media</h4>
+                            <p>Enhance brand visibility through compelling flyers, brochures, and print advertisements.
+                            </p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Project End -->
+    </section>
+
+    <!-- Services Section End -->
+
 
 
     <!-- Blog Start -->
@@ -752,64 +842,28 @@ logo: ""
     <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
     <script src="altText.js" defer></script>
     <script>
-        // Function to format number with K, L, CR
-        function formatNumber(num) {
-            if (num >= 10000000) {
-                // For Crores (CR)
-                return num / 10000000 + " CR+";
-            } else if (num >= 100000) {
-                // For Lakhs (L)
-                return num / 100000 + " L+";
-            } else if (num >= 1000) {
-                // For Thousands (K)
-                return num / 1000 + " K+";
-            } else {
-                return num + "+";
-            } // For numbers less than 1000, no formatting
+        function animateCounter(id, target) {
+            let el = document.getElementById(id);
+            let count = 0;
+            const interval = setInterval(() => {
+                if (count >= target) {
+                    clearInterval(interval);
+                    el.innerText = target.toLocaleString();
+                } else {
+                    count += Math.ceil(target / 50);
+                    el.innerText = count.toLocaleString();
+                }
+            }, 30);
         }
 
-        // Counter animation
-        document.addEventListener("DOMContentLoaded", function () {
-            function animateCounter(id, start, end, duration) {
-                let current = start;
-                let step = (end - start) / duration;
-                let element = document.getElementById(id);
-
-                let interval = setInterval(function () {
-                    current += step;
-                    if (current >= end) {
-                        clearInterval(interval);
-                        element.innerText = formatNumber(end); // Set the formatted number
-                    } else {
-                        element.innerText = formatNumber(Math.floor(current)); // Update the formatted number
-                    }
-                }, 1);
-            }
-
-            animateCounter("clients-counter", 0, 50000, 1000); // Example values: 150,000 clients
-            animateCounter("projects-counter", 0, 10000000, 1000); // Example values: 1,000,000 projects
-            animateCounter("team-counter", 0, 100, 1000); // Example values: 5,000 team members
+        // When page loads
+        window.addEventListener("DOMContentLoaded", () => {
+            animateCounter("leads-counter", 50000);
+            animateCounter("spend-counter", 2000000);
+            animateCounter("clients-counter", 150);
         });
     </script>
-    <script>
-        document.querySelectorAll('.counter').forEach(counter => {
-            let target = +counter.dataset.target;
-            let count = 0;
-            let increment = target / 100;
 
-            const updateCounter = () => {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.ceil(count);
-                    requestAnimationFrame(updateCounter);
-                } else {
-                    counter.innerText = target.toLocaleString();
-                }
-            };
-
-            updateCounter();
-        });
-    </script>
 
 
     <!-- JavaScript Libraries -->
