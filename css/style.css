@@ -162,64 +162,161 @@
 /*** Topbar End ***/
 
 /*** Navbar Start ***/
-.navbar .navbar-nav {
-  padding: 15px 0;
+
+.navbar {
+  padding: 0.5rem 1rem;
+  background: var(--bs-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
+/* Toggle Button - Stylish Hamburger */
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: var(--bs-dark);
+  display: block;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 30px;
+  height: 3px;
+  background-color: var(--bs-dark);
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler-icon::before {
+  top: -10px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: -10px;
+}
+
+/* When toggler is open (JS class added via Bootstrap) */
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+/* Nav Links */
 .navbar .navbar-nav .nav-link {
   padding: 15px;
-  color: var(--bs-white);
+  color: var(--bs-dark);
   font-weight: 500;
   font-size: 16px;
-  outline: none;
-  transition: 0.5s;
+  position: relative;
+  transition: color 0.3s ease-in-out;
 }
 
-.navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-  color: var(--bs-primary);
-  transition: 0.5s;
+.navbar .navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 8px;
+  height: 2px;
+  width: 0;
+  background-color: black;
+  transition: width 0.3s;
 }
 
-.navbar .dropdown-toggle::after {
+.navbar .navbar-nav .nav-link:hover::after,
+.navbar .navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+/* Dropdown styles */
+.navbar .dropdown-menu {
+  background-color: var(--bs-light);
   border: none;
-  content: "\f107";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 800;
-  vertical-align: middle;
-  margin-left: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: dropdownFade 0.3s ease-in-out;
 }
 
-@media (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: block;
-    visibility: hidden;
-    top: 100%;
-    transform: rotateX(-75deg);
-    transform-origin: 0% 0%;
-    transition: 0.5s;
+@keyframes dropdownFade {
+  0% {
+    transform: translateY(-10px);
     opacity: 0;
   }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.dropdown .dropdown-menu a {
+  padding: 10px 20px;
+  color: var(--bs-dark);
+  transition: background 0.3s;
 }
 
 .dropdown .dropdown-menu a:hover,
 .dropdown .dropdown-menu a.active {
-  background: var(--bs-dark);
-  color: var(--bs-primary);
+  background-color: var(--bs-dark);
+  color: #fff;
 }
 
-.navbar .nav-item:hover .dropdown-menu {
-  transform: rotateX(0deg);
-  visibility: visible;
-  transition: 0.5s;
-  opacity: 1;
+/* Desktop Dropdown on Hover */
+@media (min-width: 992px) {
+  .navbar .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    transform: translateY(10px);
+  }
+
+  .navbar .nav-item:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.navbar-toggler {
-  background: var(--bs-secondary);
-  color: var(--bs-light) !important;
-  padding: 5px 12px;
-  border: 2px solid var(--bs-primary) !important;
+/* Mobile Navbar Collapse */
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background-color: var(--bs-light);
+    padding: 1rem;
+  }
+
+  .navbar-nav {
+    margin-top: 1rem;
+  }
+
+  .navbar .nav-link {
+    padding-left: 0;
+    padding-right: 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar .dropdown-menu {
+    margin-left: 1rem;
+    box-shadow: none;
+  }
 }
 
 /*** Navbar End ***/
