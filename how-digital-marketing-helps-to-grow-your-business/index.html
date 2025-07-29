@@ -594,10 +594,13 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
 
 <body>
     <!-- Spinner Start -->
+
     <div id="spinner"
-        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+        class="show d-flex justify-content-center align-items-center position-fixed w-100 vh-100 top-0 start-0 bg-white">
+        <div class="loader"></div>
     </div>
+
+
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
@@ -1099,6 +1102,14 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
 
+    <script>
+        window.addEventListener('load', () => {
+            const spinner = document.getElementById('spinner');
+            if (spinner) {
+                spinner.classList.remove('show');
+            }
+        });
+    </script>
 
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>

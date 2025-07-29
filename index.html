@@ -20,6 +20,7 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -56,13 +57,13 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
 
         .logo {
             flex: 0 0 auto;
-            width: 150px;
+            /* width: 150px; */
             margin: 0 20px;
         }
 
         .logo img {
-            width: 150px;
-            height: 150px;
+            /* width: 150px;
+            height: 150px; */
             display: block;
         }
 
@@ -75,6 +76,11 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
             100% {
                 transform: translateX(-50%);
             }
+        }
+
+
+        .shadow-sm {
+            box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.05) !important;
         }
     </style>
     <script type="application/ld+json">
@@ -90,10 +96,13 @@ logo: ""
 
 <body>
     <!-- Spinner Start -->
+    
     <div id="spinner"
-        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
+        class="show d-flex justify-content-center align-items-center position-fixed w-100 vh-100 top-0 start-0 bg-white">
+        <div class="loader"></div>
     </div>
+   
+
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
@@ -134,28 +143,38 @@ logo: ""
                 <div class="collapse navbar-collapse me-n3" id="navbarCollapse">
                     <div class="navbar-nav ms-auto">
                         <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="/about_online-marketing-company-nagpur" class="nav-item nav-link">About</a>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                             <div class="dropdown-menu m-0 bg-primary">
-                                <a href="paidads.html" class="dropdown-item ">Paid Advertising</a>
-                                <a href="searchengine.html" class="dropdown-item ">Search Engine Optimization</a>
-                                <a href="socialmedia.html" class="dropdown-item">Social Media Marketing</a>
-                                <a href="webdevelopment.html" class="dropdown-item">Website Development</a>
-                                <a href="printmedia.html" class="dropdown-item">Print Media Services</a>
-                                <a href="production.html" class="dropdown-item">Production</a>
-                                <a href="shopify.html" class="dropdown-item">Shopify Development</a>
-                                <a href="influencer.html" class="dropdown-item">Influencer Marketing</a>
-                                <a href="eventmarketing.html" class="dropdown-item">Event Marketing</a>
-                                <a href="branding.html" class="dropdown-item">Branding Solution</a>
+                                <a href="/paidads_top-seo-company-in-nagpur" class="dropdown-item ">Paid Advertising</a>
+                                <a href="/searchengine_best-digital-marketing-agency-in-nagpur"
+                                    class="dropdown-item">Search Engine Optimization</a>
+                                <a href="/socialmedia_digital-marketing-in-nagpur" class="dropdown-item">Social Media
+                                    Marketing</a>
+                                <a href="/webdevelopment_digital-advertising-agency-in-nagpur"
+                                    class="dropdown-item ">Website Development</a>
+                                <a href="/printmedia_best-digital-marketing-company-in-nagpur"
+                                    class="dropdown-item">Print Media Services</a>
+                                <a href="/production_best-digital-marketing-services-in-nagpur"
+                                    class="dropdown-item">Production</a>
+                                <a href="/shopify_digital-marketing-companies-in-nagpur" class="dropdown-item">Shopify
+                                    Development</a>
+                                <a href="/influencer_performance-marketing-agency-in-nagpur"
+                                    class="dropdown-item ">Influencer Marketing</a>
+                                <a href="/eventmarketing_digital-marketing-services" class="dropdown-item">Event
+                                    Marketing</a>
+                                <a href="/branding_social-media-marketing-agency-in-nagpur"
+                                    class="dropdown-item">Branding Solution</a>
 
                             </div>
                         </div>
-                        <a href="ourwork.html" class="nav-item nav-link">Our Work</a>
-                        <a href="team.html" class="nav-item nav-link">Our Team</a>
-                        <a href="blog.html" class="nav-item nav-link">Blogs</a>
-                        <a href="career.html" class="nav-item nav-link">Career</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="/ourwork_online-marketing-solutions" class="nav-item nav-link">Our Work</a>
+                        <a href="/team_real-estate-specialist-marketing-agency-in-nagpur" class="nav-item nav-link">Our
+                            Team</a>
+                        <a href="/blog_digital-marketing-agency-in-nagpur" class="nav-item nav-link">Blogs</a>
+                        <a href="/career_social-media-marketing-nagpur" class="nav-item nav-link">Career</a>
+                        <a href="/contact_full-service-digital-marketing-agency" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -177,81 +196,74 @@ logo: ""
 
     <!-- Get In Touch Start -->
 
-    <!-- Get In Touch End -->
+    <section class="about-us-section py-5 bg-light position-relative overflow-hidden">
+        <!-- Decorative Background -->
+        <div class="position-absolute top-0 start-0 w-100 h-100 bg-dots z-n1"></div>
 
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="about-img">
-                        <div class="rotate-left bg-dark"></div>
-                        <div class="rotate-right bg-dark"></div>
-                        <img src="img/about-img.jpg" class="img-fluid h-100" alt="img">
-                        <div class="bg-white experiences">
-                            <h2 class="display-3">8</h2>
-                            <h6 class="fw-bold">Years Of Experiences</h6>
-                        </div>
-                    </div>
+            <div class="row g-5 align-items-center">
+                <!-- Left Content -->
+                <div class="col-lg-6">
+                    <span class="badge bg-white text-primary rounded-pill px-3 py-2 shadow-sm mb-3">About Us</span>
+                    <h2 class="display-5 fw-bold mb-3">Empowering Brands Through Digital Intelligence</h2>
+                    <p class="fs-5 text-muted" style="text-align: justify;">
+                        Mediaforum Digital is not just another agency — we are your performance marketing partner.
+                        With a strategic mix of creativity, data, and innovation, we help businesses stand out,
+                        scale faster, and convert better.
+                    </p>
+                    <a href="about.html" class="btn btn-primary rounded-pill px-4 py-3 mt-3">
+                        Discover Our Process <i class="bi bi-arrow-right ms-2"></i>
+                    </a>
                 </div>
-                <div class="col-lg-6 col-md-12 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="about-item overflow-hidden">
-                        <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">
-                            About PL Mediaforum</h5>
-                        <h2 class="display-5 mb-2">Welcome to Mediaforum Digital</h2>
-                        <p class="fs-5" style="text-align: justify;">The Digital Agency where we build brands and take
-                            them to distinguished heights. We’ve been the <b>best digital marketing services for small
-                                businesses in Nagpur</b> for years and we continue to grow our expertise with every
-                            passing
-                            minute.</p>
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="text-center">
-                                    <div class="p-4 bg-dark rounded d-flex"
-                                        style="align-items: center; justify-content: center;">
-                                        <i class="fas fa-compass fa-4x text-primary"></i>
-                                    </div>
-                                    <div class="my-2">
-                                        <h5>Discover</h5>
-                                        <p>Next-gen marketing with cutting-edge tech.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-center">
-                                    <div class="p-4 bg-dark rounded d-flex"
-                                        style="align-items: center; justify-content: center;">
-                                        <i class="fas fa-drafting-compass fa-4x text-primary"></i>
-                                    </div>
-                                    <div class="my-2">
-                                        <h5>Design</h5>
-                                        <p>Smart marketing to keep you tech-ready</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="text-center">
-                                    <div class="p-4 bg-dark rounded d-flex"
-                                        style="align-items: center; justify-content: center;">
-                                        <i class="fas fa-paper-plane fa-4x text-primary"></i>
-                                    </div>
-                                    <div class="my-2">
-                                        <h5>Deliver</h5>
-                                        <p>Exceptional experience, elevated brand visibility.</p>
-                                    </div>
-                                </div>
-                            </div>
 
+                <!-- Right Grid Cards (Replaces Counters) -->
+                <div class="col-lg-6">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
+                                <div class="mb-3">
+                                    <i class="bi bi-bar-chart-line-fill text-primary fs-2"></i>
+                                </div>
+                                <h6 class="fw-bold text-dark mb-1">Brands Empowered</h6>
+                                <p class="text-muted small mb-0">Over 100 businesses digitally transformed with us.</p>
+                            </div>
                         </div>
-                        <a href="about.html"> <button type="button"
-                                class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-5">Know More</button></a>
+                        <div class="col-md-6">
+                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
+                                <div class="mb-3">
+                                    <i class="bi bi-bullseye text-primary fs-2"></i>
+                                </div>
+                                <h6 class="fw-bold text-dark mb-1">Ad Impressions</h6>
+                                <p class="text-muted small mb-0">2M+ ad impressions served across platforms.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
+                                <div class="mb-3">
+                                    <i class="bi bi-layers-fill text-primary fs-2"></i>
+                                </div>
+                                <h6 class="fw-bold text-dark mb-1">Industries Served</h6>
+                                <p class="text-muted small mb-0">Experience across 50+ business verticals.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card border-0 h-100 shadow-sm p-4 rounded-3 bg-white">
+                                <div class="mb-3">
+                                    <i class="bi bi-clock-history text-primary fs-2"></i>
+                                </div>
+                                <h6 class="fw-bold text-dark mb-1">Years of Experience</h6>
+                                <p class="text-muted small mb-0">8+ years delivering marketing success stories.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
-    </div>
-    <!-- About End -->
+    </section>
+
+
 
 
     <!-- Counter Start -->
@@ -299,11 +311,11 @@ logo: ""
                 <div class="logo"><img src="img/client/goverdhan.png" alt="Client 3"></div>
                 <div class="logo"><img src="img/client/kawc.png" alt="Client 4"></div>
                 <div class="logo"><img src="img/client/kukreja.png" alt="Client 6"></div>
-                <div class="logo"><img src="img/client/mahalaxmi-logo.png" alt="Client 4"></div>
+                <div class="logo"><img src="img/client/mahalaxmi.png" alt="Client 4"></div>
                 <div class="logo"><img src="img/client/mittal.png" alt="Client 8"></div>
-                <div class="logo"><img src="img/client/nanik-logo.png" alt="Client 9"></div>
+                <div class="logo"><img src="img/client/nanik.png" alt="Client 9"></div>
                 <div class="logo"><img src="img/client/navanirman-logo.png" alt="Client 10"></div>
-                <div class="logo"><img src="img/client/pankaj-logo-.png" alt="Client 11"></div>
+                <div class="logo"><img src="img/client/pankaj-logo.png" alt="Client 11"></div>
                 <div class="logo"><img src="img/client/rudra.png" alt="Client 12"></div>
                 <div class="logo"><img src="img/client/prasanna.png" alt="Client 13"></div>
                 <div class="logo"><img src="img/client/shivganga.png" alt="Client 14"></div>
@@ -313,9 +325,9 @@ logo: ""
                 <div class="logo"><img src="img/client/goverdhan.png" alt="Client 3"></div>
                 <div class="logo"><img src="img/client/kawc.png" alt="Client 4"></div>
                 <div class="logo"><img src="img/client/kukreja.png" alt="Client 6"></div>
-                <div class="logo"><img src="img/client/mahalaxmi-logo.png" alt="Client 4"></div>
+                <div class="logo"><img src="img/client/mahalaxmi.png" alt="Client 4"></div>
                 <div class="logo"><img src="img/client/mittal.png" alt="Client 8"></div>
-                <div class="logo"><img src="img/client/nanik-logo.png" alt="Client 9"></div>
+                <div class="logo"><img src="img/client/nanik.png" alt="Client 9"></div>
                 <div class="logo"><img src="img/client/navanirman-logo.png" alt="Client 10"></div>
                 <div class="logo"><img src="img/client/pankaj-logo-.png" alt="Client 11"></div>
                 <div class="logo"><img src="img/client/rudra.png" alt="Client 12"></div>
@@ -721,8 +733,18 @@ logo: ""
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
 
+    <script>
+        window.addEventListener('load', () => {
+            const spinner = document.getElementById('spinner');
+            if (spinner) {
+                spinner.classList.remove('show');
+            }
+        });
+    </script>
+
+    <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <script src="altText.js" defer></script>
     <script>
         // Function to format number with K, L, CR
         function formatNumber(num) {
@@ -763,6 +785,27 @@ logo: ""
             animateCounter("team-counter", 0, 100, 1000); // Example values: 5,000 team members
         });
     </script>
+    <script>
+        document.querySelectorAll('.counter').forEach(counter => {
+            let target = +counter.dataset.target;
+            let count = 0;
+            let increment = target / 100;
+
+            const updateCounter = () => {
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = Math.ceil(count);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    counter.innerText = target.toLocaleString();
+                }
+            };
+
+            updateCounter();
+        });
+    </script>
+
+
     <!-- JavaScript Libraries -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>

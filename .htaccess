@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# SEO URLs to real file mappings
+RewriteRule ^about-online-marketing-company-nagpur/?$ about.html [L]
+RewriteRule ^blog-digital-marketing-agency-in-nagpur/?$ blog.html [L]
+RewriteRule ^branding-social-media-marketing-agency-in-nagpur/?$ branding.html [L]
+RewriteRule ^career-social-media-marketing-nagpur/?$ career.html [L]
+RewriteRule ^contact-full-service-digital-marketing-agency/?$ contact.html [L]
+RewriteRule ^eventmarketing-digital-marketing-services/?$ eventmarketing.html [L]
+RewriteRule ^influencer-performance-marketing-agency-in-nagpur/?$ influencer.html [L]
+RewriteRule ^ourwork-online-marketing-solutions/?$ ourwork.html [L]
+RewriteRule ^paidads-top-seo-company-in-nagpur/?$ paidads.html [L]
+RewriteRule ^printmedia-best-digital-marketing-company-in-nagpur/?$ printmedia.html [L]
+RewriteRule ^production-best-digital-marketing-services-in-nagpur/?$ production.html [L]
+RewriteRule ^searchengine-best-digital-marketing-agency-in-nagpur/?$ searchengine.html [L]
+RewriteRule ^shopify-digital-marketing-companies-in-nagpur/?$ shopify.html [L]
+RewriteRule ^socialmedia-digital-marketing-in-nagpur/?$ socialmedia.html [L]
+RewriteRule ^team-real-estate-specialist-marketing-agency-in-nagpur/?$ team.html [L]
+RewriteRule ^webdevelopment-digital-advertising-agency-in-nagpur/?$ webdevelopment.html [L]

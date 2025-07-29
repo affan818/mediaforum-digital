@@ -39,6 +39,15 @@
 </head>
 
 <body>
+    <!-- Spinner Start -->
+
+    <div id="spinner"
+        class="show d-flex justify-content-center align-items-center position-fixed w-100 vh-100 top-0 start-0 bg-white">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- Spinner End -->
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ4R7XW8" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -60,6 +69,14 @@
             function goHome() {
                 window.location.href = '/'; // Replace '/' with your desired home page URL
             }
+        </script>
+        <script>
+            window.addEventListener('load', () => {
+                const spinner = document.getElementById('spinner');
+                if (spinner) {
+                    spinner.classList.remove('show');
+                }
+            });
         </script>
 </body>
 
