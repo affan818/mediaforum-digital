@@ -31,8 +31,27 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .contact-section input,
+        .contact-section textarea {
+            font-family: 'Urbanist';
+            font-size: 0.95rem;
+            border: 1px solid #ccc;
+        }
+
+        .contact-section input:focus,
+        .contact-section textarea:focus {
+            border-color: #005f52;
+            box-shadow: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -122,14 +141,17 @@
     </header>
     <!-- Custom Navbar End -->
 
-
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid page-header pt-5 pb-0">
         <div class="container text-center py-5">
-            <h2 class="display-2 text-white mb-4 animated slideInDown">Let’s connect and make the heads turn.</h2>
+            <h1 class="display-2 text-white mb-4 animated slideInDown" style="font-family: Le Major;">Let’s
+                <span style="font-family: Playwrite AU QLD;">connect</span> and
+                make <br>
+                <span style="font-family:Playwrite AU QLD">the heads turn</span>.
+            </h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-light">Home</a></li>
                     <li class="breadcrumb-item text-white" aria-current="page">Contact</li>
                 </ol>
             </nav>
@@ -138,93 +160,86 @@
     <!-- Page Header End -->
 
 
-    <!-- Contact Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Send us
-                    a message</h5>
-                <h1 class="display-5 mx-auto">Then let us know about it and we can see what we can do to help</h1>
-            </div>
-            <div class="row g-5 mb-5">
-                <div class="col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="h-100">
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link">
-                            <div class="flex-shrink-0 d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3"
-                                style="width: 64px; height: 64px;">
-                                <i class="fa fa-share text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">Follow Us</h4>
-                                <div class="d-flex justify-content-center">
-                                    <a class="px-2" href="https://www.facebook.com/MediaforumDigitall/"><i
-                                            class="fab fa-facebook-f text-dark"></i></a>
-                                    <a class="px-2" href="https://www.instagram.com/mediaforumdigital"><i
-                                            class="fab fa-youtube text-dark"></i></a>
-                                    <a class="px-2" href="https://www.linkedin.com/company/p-l-mediaforum-pvt-ltd"><i
-                                            class="fab fa-linkedin-in text-dark"></i></a>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Contact Section Start -->
+    <section class="contact-section py-5" style="background-color: #f9f9f9;">
+        <div class="container">
+            <div class="row g-5 align-items-start">
 
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link mt-5">
-                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3"
-                                style="width: 64px; height: 64px;">
-                                <i class="fa fa-phone text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">Call Us</h4>
-                                <a class="h5 text-dark fs-6" href="tel:919765127101">+91 9765127101</a>
-                            </div>
-                        </div>
+                <!-- Left: Contact Info -->
+                <div class="col-lg-5">
+                    <h2 class="mb-4" style="font-family: 'Le Major'; color: #005f52;">Let’s Connect</h2>
+                    <p style="font-family: 'Urbanist'; color: #555;">
+                        We’re here to help you grow. Reach out for inquiries, collaborations, or just to say hello!
+                    </p>
 
-                        <div class="d-flex bg-light p-3 rounded contact-btn-link mt-5">
-                            <div class="d-flex align-items-center justify-content-center bg-primary rounded-circle p-3 ms-3"
-                                style="width: 64px; height: 64px;">
-                                <i class="fa fa-envelope text-dark"></i>
-                            </div>
-                            <div class="ms-3 contact-link">
-                                <h4 class="text-dark">Email Us</h4>
-                                <a class="h5 text-dark fs-6"
-                                    href="mailto:business@mediaforumdigital.com">business@mediaforumdigital.com</a>
-                            </div>
-                        </div>
+                    <ul class="list-unstyled mt-4" style="font-family: 'Playwrite AU QLD'; color: #444;">
+                        <li class="mb-3">
+                            <i class="fas fa-phone-alt me-2" style="color: #005f52;"></i>
+                            <a href="tel:+919765127101" class="text-decoration-none text-dark">+91 9765127101</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-envelope me-2" style="color: #005f52;"></i>
+                            <a href="mailto:business@mediaforumdigital.com"
+                                class="text-decoration-none text-dark">business@mediaforumdigital.com</a>
+                        </li>
+                        <li class="mb-3">
+                            <i class="fas fa-map-marker-alt me-2" style="color: #005f52;"></i>
+                            4th Floor, Plot. No. 37, Beside Chaitanya Home Stay, 39, Behind Amey Hospital, Near Gajanan
+                            Nagar Garden, Nagpur, Maharashtra,440015
+                        </li>
+                    </ul>
 
+                    <!-- Social Icons -->
+                    <div class="mt-4">
+                        <a href="https://www.facebook.com/MediaforumDigitall/"
+                            class="btn btn-outline-dark btn-sm rounded-circle me-2">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/mediaforumdigital"
+                            class="btn btn-outline-dark btn-sm rounded-circle me-2">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/p-l-mediaforum-pvt-ltd"
+                            class="btn btn-outline-dark btn-sm rounded-circle me-2">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-8 wow fadeInUp" data-wow-delay=".5s">
-                    <form id="appointmentForm">
-                        <div class="rounded contact-form ">
-                            <div class="mb-4">
-                                <input type="text" id="name" name="user_name" class="form-control p-3"
+
+                <!-- Right: Contact Form -->
+                <div class="col-lg-7">
+                    <div class="card shadow border-0 rounded-4 p-4">
+                        <h4 class="mb-3" style="font-family: 'Urbanist'; color: #005f52;">Send us a Message</h4>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" id="name" name="user_name" class="form-control rounded-3"
                                     placeholder="Your Name" required>
                             </div>
-                            <div class="mb-4">
-                                <input type="email" id="email" name="user_email" class="form-control p-3"
+                            <div class="mb-3">
+                                <input type="email" id="email" name="user_email" class="form-control rounded-3"
                                     placeholder="Your Email" required>
                             </div>
-                            <div class="mb-4">
-                                <input type="number" class="form-control p-3" id="phone" name="user_mobile" required
-                                    pattern="[0-9]{10}" maxlength="10" minlength="10" placeholder="Phone Number">
+                            <div class="mb-3">
+                                <input type="number" class="form-control rounded-3" id="phone" name="user_mobile"
+                                    required pattern="[0-9]{10}" maxlength="10" minlength="10"
+                                    placeholder="Phone Number">
                                 <small class="text-muted">Enter a valid 10-digit phone number.</small>
                             </div>
-                            <div class="mb-4">
-                                <textarea name="user_message"
-                                    class="form-control wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
-                                    rows="5" placeholder="Message" required></textarea>
+                            <div class="mb-3">
+                                <textarea name="user_message" class="form-control rounded-3" rows="5"
+                                    placeholder="Your Message" required></textarea>
                             </div>
-                            <button class="btn btn-primary border-0 py-3 px-4 rounded-pill" type="submit">Send
-                                Message</button>
-                            <div id="thankyou" class="mt-3" aria-hidden="true"></div>
-                        </div>
-                    </form>
-
+                            <button type="submit" class="btn text-white px-4" style="background-color: #005f52;">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
-    <!-- Contact End -->
+    </section>
+    <!-- Contact Section End -->
 
 
     <!-- Footer Start -->
@@ -277,14 +292,12 @@
     </div>
     <!-- Footer End -->
 
-
-
     <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
+    <div class="container-fluid copyright bg-light py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <a href="#" class="text-primary mb-0 display-6"><img src="img/mf-logo.png" title="logo" width="150"
+                    <a href="#" class="text-primary mb-0 display-6"><img src="white-logo.png" title="logo" width="150"
                             alt="mediaforumdigital"></a>
                 </div>
                 <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
@@ -297,8 +310,9 @@
                         href="https://www.linkedin.com/company/p-l-mediaforum-pvt-ltd"><i
                             class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-md-4 my-auto text-center text-md-end text-white">
-                    Designed By <a class="border-bottom" href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
+                <div class="col-md-4 my-auto text-center text-md-end text-dark">
+                    Designed By <a class="border-bottom" style="color: #005f52;"
+                        href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
                 </div>
             </div>
         </div>
@@ -329,8 +343,10 @@
     </script>
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
     <script>
         // Initialize EmailJS with your Public Key
         emailjs.init("aF7OUlDZlnrcF0aYV");

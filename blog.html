@@ -29,11 +29,79 @@
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .blog-card {
+            background: #ffffff;
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog-img-wrapper {
+            width: 100%;
+            height: 220px;
+            overflow: hidden;
+        }
+
+        .blog-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .blog-card:hover .blog-img {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+            background-color: #f8f9fa;
+        }
+
+        .blog-title {
+            font-size: 1.25rem;
+            color: #222;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-meta {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 0.75rem;
+        }
+
+        .blog-description {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+        }
+
+        .blog-read-more {
+            font-size: 0.95rem;
+            color: #005f52;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .blog-read-more:hover {
+            color: #003d36;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -124,324 +192,290 @@
 
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid page-header pt-5 pb-0">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Blog Post</h1>
+            <h1 class="display-2 text-white mb-4 animated slideInDown" style="font-family: Le Major;"> <span
+                    style="font-family:Playwrite AU QLD">Blog </span>Post
+            </h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item text-white" aria-current="page">Blog Post</li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-light">Home</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Blogs</li>
                 </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
+    <!-- Blog Card Start  -->
+    <!-- Blog Section -->
+    <section class="blog-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 section-title" style="font-family: 'Le Major'; color: #005f52;">
+                Latest <span style="font-family:Playwrite AU QLD">Insights</span>
+            </h2>
+            <div class="row g-4">
+                <!-- Blog Card -->
 
-    <!-- Blog Start -->
-
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <!-- First  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-1.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>P.L Mediaforum Pvt. Ltd. Honored with Prestigious 'Emerging Ad Agency of 2019' Award
-                                </h4>
-                                <p>P.L Mediaforum Pvt. Ltd. was honored as the Emerging Ad Agency of the Year 2019 at
-                                    the
-                                    prestigious Media Awards, organized by Soul Touch Media Pvt. Ltd. in association
-                                    with
-                                    India’s leading newspapers. Competing among over 100 agencies, P.L Mediaforum was
-                                    impressed with its exceptional creativity and strategic capabilities.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="https://www.thehitavada.com/Encyc/2020/3/3/Mediaforum-gets-Emerging-Ad-Agency-of-2109-award.html"
-                                    type="button" class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 12  -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-1.jpg" alt="P.L Mediaforum Pvt. Ltd" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">P.L Mediaforum Pvt. Ltd.
+                                Honored with Prestigious 'Emerging Ad Agency of 2019' Award</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">March 03, 2020 · The Hitadava
+                            </p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                P.L Mediaforum Pvt. Ltd. was honored as the Emerging Ad Agency of the Year 2019 at
+                                the
+                                prestigious Media Awards,organized by Soul Touch Media Pvt.
+                            </p>
+                            <a href="https://www.thehitavada.com/Encyc/2020/3/3/Mediaforum-gets-Emerging-Ad-Agency-of-2109-award.html"
+                                class="blog-read-more">Read More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- second  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-2.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Innovative Real Estate Ad Campaign by Mediaforum Digital</h4>
-                                <p>Discover how Mediaforum Digital, the best digital marketing agency in Nagpur, turned
-                                    12,14,142 lakhs Readers with upside-down ads for Atlantis by Mittal Group. A Case
-                                    Study
-                                    on Mediaforum Digital's Innovative Marketing Campaign for Atlantis by Mittal Group
-                                    In
-                                    the bustling world of real estate marketing, making a mark requires more than just
-                                    traditional approaches. </p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="innovative-real-estate-ad-campaign-by-mediaforum-digital/index.html"
-                                    type="button" class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 11  -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-2.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Innovative Real Estate
+                                Ad Campaign by Mediaforum Digital</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">April 25, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                Discover how Mediaforum Digital, the best digital marketing agency in Nagpur, turned
+                                12,14,142 lakhs Readers with upside-down ads for Atlantis by Mittal Group. In
+                                the bustling world of real estate marketing.
+                            </p>
+                            <a href="innovative-real-estate-ad-campaign-by-mediaforum-digital/index.html"
+                                class="blog-read-more">Read More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- new third  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/new-blog-banner.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Top Digital Marketing Trends for 2025 You Should Know</h4>
-                                <p>The digital marketing landscape is evolving rapidly, and staying updated is essential
-                                    to maintaining a competitive edge. Whether you’re a digital marketing agency in
-                                    Nagpur or specializing in paid media services, being aware of the latest trends can
-                                    significantly influence your strategy.Artificial Intelligence is no longer just a
-                                    futuristic term - it's here, and it's revolutionizing the way we go about marketing.
-                                    AI is making customer behavior easier to analyze, forecast trends, and provide
-                                    personalized experiences.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="top-digital-marketing-trends-for-2025-you-should-know/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 10 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/new-blog-banner.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Top Digital Marketing
+                                Trends for 2025 You Should Know</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">June 25, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                The digital marketing landscape is evolving rapidly, and staying updated is essential
+                                to maintaining a competitive edge.Whether you’re a digital marketing agency in
+                                Nagpur or specializing in paid media services
+                            </p>
+                            <a href="top-digital-marketing-trends-for-2025-you-should-know/index.html"
+                                class="blog-read-more">Read More →</a>
                         </div>
                     </div>
                 </div>
-                <!--fourth new -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/5-piller-blog-card-img.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>The 5-Pillar Strategy to Drive Your E-Commerce Business Forward in 2025</h4>
-                                <p style="text-align:justify">Operating an e-commerce store in 2025 is exciting but
-                                    tough. The competition is stiff, consumers are intelligent, and trends change at
-                                    lightning speed. Therefore, if you desire to build your virtual shop, a good product
-                                    alone is no longer sufficient.
-                                    <br>
-                                    You require a straightforward, step-by-step strategy - based on five pillars of
-                                    strength:
-                                    Strategy, Technology, Customer Experience, Acquisition & Retention, and Data
-                                    Analytics.
-                                </p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./the-5-pillar-strategy-to-drive-your-e-commerce-business-forward-in-2025/index.html"
-                                    type="button" class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 9  -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/5-piller-blog-card-img.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">The 5-Pillar Strategy to
+                                Drive Your E-Commerce Business Forward in 2025</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                Operating an e-commerce store in 2025 is exciting but
+                                tough. The competition is stiff, consumers are intelligent, and trends change at
+                                lightning speed.
+                            </p>
+                            <a href="./the-5-pillar-strategy-to-drive-your-e-commerce-business-forward-in-2025/index.html"
+                                class="blog-read-more">Read More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- fourth  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-3.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Best Real Estate Digital Marketing Agency In Nagpur</h4>
-                                <p>Digital marketing usage is becoming increasingly important in the ever-evolving real
-                                    estate industry. In a vibrant city like Nagpur, where numerous potential clients are
-                                    actively seeking properties, leveraging effective digital strategies can make a
-                                    significant impact. Techniques like social media marketing, SEO, and targeted
-                                    advertising help real estate businesses attract, engage, and convert more leads.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./best-real-estate-digital-marketing-agency-in-nagpur/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 8  -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-3.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Best Real Estate Digital
+                                Marketing Agency In Nagpur
+                            </h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                Digital marketing usage is becoming increasingly important in the ever-evolving real
+                                estate industry.In a vibrant city like Nagpur, where numerous potential clients are
+                                actively seeking properties.
+                            </p>
+                            <a href="./best-real-estate-digital-marketing-agency-in-nagpur/index.html"
+                                class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- fifth  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-3.png" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Top 10 Digital Marketing Strategies for Small Businesses in 2025</h4>
-                                <p>Small businesses are the backbone of the economy, and in the digital era, leveraging
-                                    effective marketing strategies is crucial for growth and success. With 2025 fast
-                                    approaching, let’s explore the top 10 digital marketing strategies that small
-                                    businesses
-                                    can adopt to maximize their reach and impact. If you're seeking expert guidance.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./Top-10-Digital-Marketing-Strategies-for-Small-Businesses/index.html"
-                                    type="button" class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 7 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-3.png" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Top 10 Digital Marketing
+                                Strategies for Small Businesses in 2025</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                Small businesses are the backbone of the economy, and in the digital era, leveraging
+                                effective marketing strategies is crucial for growth and success.
+                            </p>
+                            <a href="./Top-10-Digital-Marketing-Strategies-for-Small-Businesses/index.html"
+                                class="blog-read-more">Read More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- sixth  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-4.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Top Digital Marketing Agencies in Nagpur</h4>
-                                <p>In this fast-paced digital world today, no enterprise can afford to lag behind
-                                    without creating a strong online presence. With more and more companies from Nagpur
-                                    waking up to this fact, the demand for professional services in this field is
-                                    growing. In this blog, we have compiled a list of some top digital marketing
-                                    agencies of Nagpur-whether it is social media marketing or full-service digital
-                                    marketing solutions.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./top-digital-marketing-agencies-in-nagpur/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 6  -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-4.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Top Digital Marketing
+                                Agencies in Nagpur</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                In this fast-paced digital world today, no enterprise can afford to lag behind
+                                without creating a strong online presence.
+                            </p>
+                            <a href="./top-digital-marketing-agencies-in-nagpur/index.html" class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- seventh  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-5.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Top Digital Marketing Agencies in Nagpur- 2024</h4>
-                                <p>In the modern world, the having a powerful web presence is extremely important for
-                                    any commercial entity. We have compiled a list of the best digital marketing
-                                    agencies in Nagpur that can pump up your business, give you the visibility you need
-                                    and offer more customers. In this article, attention will be paid to the best
-                                    digital marketing agencies in Nagpur and the sphere in which knowledgeable and
-                                    helpful services are provided.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="top-digital-marketing-agencies-in-nagpur-2024/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-5.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Top Digital Marketing
+                                Agencies in Nagpur- 2024</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                In the modern world, the having a powerful web presence is extremely important for
+                                any commercial entity.
+                            </p>
+                            <a href="top-digital-marketing-agencies-in-nagpur-2024/index.html"
+                                class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- eight  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-6.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>Will Digital Marketing Be Replaced by AI?</h4>
-                                <p>In the rapidly evolving landscape of technology, one question that frequently arises
-                                    is whether artificial intelligence (AI) will eventually replace digital marketing.
-                                    As AI continues to advance, its impact on various industries, including digital
-                                    marketing, becomes increasingly significant. While AI is transforming the field, it
-                                    is essential to understand how this technology complements rather than completely
-                                    replaces traditional digital marketing strategies. </p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./will-digital-marketing-be-replaced-by-ai/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-6.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">Will Digital Marketing
+                                Be Replaced by AI?</h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                In the rapidly evolving landscape of technology, one question that frequently arises
+                                is whether artificial intelligence (AI) will eventually replace digital marketing.
+                            </p>
+                            <a href="./will-digital-marketing-be-replaced-by-ai/index.html" class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- ninth -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-7.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>How to start Digital Marketing
-                                </h4>
-                                <p>Digital marketing is the heartbeat of the modern business world. With the digital
-                                    landscape continuously evolving, it's crucial to understand how to start and grow
-                                    your digital marketing efforts. Whether you're a newbie or looking to enhance your
-                                    existing strategy, this guide will provide you with a step-by-step approach to
-                                    starting digital marketing. Plus, we'll dive into why Media Forum Digital Company
-                                    offers the best digital marketing services in Nagpur.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./how-to-start-digital-marketing/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-7.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">How to start Digital
+                                Marketing
+                            </h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                Digital marketing is the heartbeat of the modern business world. With the digital
+                                landscape continuously evolving, it's crucial to understand how to start and grow
+                                your digital marketing efforts.
+                            </p>
+                            <a href="./how-to-start-digital-marketing/index.htmll" class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- tenth -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-8.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>How Digital Marketing Helps To Grow Your Business</h4>
-                                <p>In today's digital age, digital marketing techniques are not just advantageous but
-                                    essential for businesses of all sizes and industries. These strategies enable
-                                    businesses to connect with their target audience, generate leads, and drive sales
-                                    through various online channels. This comprehensive exploration will delve into the
-                                    numerous ways digital marketing services contribute to business growth and why they
-                                    have become indispensable for every organization in the contemporary landscape.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./how-digital-marketing-helps-to-grow-your-business/index.html" type="button"
-                                    class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-8.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">How Digital Marketing
+                                Helps To Grow Your Business
+                            </h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                In today's digital age, digital marketing techniques are not just advantageous but
+                                essential for businesses of all sizes and industries.
+                            </p>
+                            <a href="./how-digital-marketing-helps-to-grow-your-business/index.html"
+                                class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
-                <!-- eleventh  -->
-                <div class="col-xxl-4 col-lg-6 col-md-6 col-sm-12 wow fadeInUp pb-5">
-                    <div class="blog-item">
-                        <img src="img/blog-9.jpg" class="img-fluid w-100 rounded-top" alt="">
-                        <div class="rounded-bottom bg-light">
-                            <div class="d-flex justify-content-between p-4 pb-2">
-                                <span class="pe-2 text-dark"><i class="fa fa-user me-2"></i>By Admin</span>
-                            </div>
-                            <div class="px-4 pb-0">
-                                <h4>The best digital marketing company in nagpur a complete guide</h4>
-                                <p>Today, many businesses require digital marketing to appear online. Nagpur is no
-                                    exception, though being one of the busiest cities in Maharashtra. Companies based in
-                                    Nagpur are constant in their quest for the best digital marketing company that can
-                                    assist them in attaining their objectives online. Whether it involves SEO, social
-                                    media marketing, or even online advertisements, a well-trusted digital marketing
-                                    agency can be of great help.</p>
-                            </div>
-                            <div class="p-4 py-2 d-flex justify-content-between bg-primary rounded-bottom blog-btn">
-                                <a href="./the-best-digital-marketing-company-in-nagpur-a-complete-guide/index.html"
-                                    type="button" class="btn btn-primary border-0">Learn More</a>
-                            </div>
+                <!-- 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="blog-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="blog-img-wrapper">
+                            <img src="img/blog-9.jpg" alt="Blog Title" class="img-fluid blog-img" />
+                        </div>
+                        <div class="blog-content p-4">
+                            <h5 class="blog-title" style="font-family: 'Urbanist', sans-serif;">The best digital
+                                marketing company in nagpur a complete guide
+                            </h5>
+                            <p class="blog-meta" style="font-family: 'Playwrite AU QLD';">July 05, 2023 · Digital
+                                Marketing</p>
+                            <p class="blog-description" style="font-family: 'Urbanist', sans-serif;">
+                                Today, many businesses require digital marketing to appear online. Nagpur is no
+                                exception, though being one of the busiest cities in Maharashtra.
+                            </p>
+                            <a href="./the-best-digital-marketing-company-in-nagpur-a-complete-guide/index.html"
+                                class="blog-read-more">Read
+                                More →</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- Blog End  -->
+    <!-- Blog Card End  -->
 
     <!-- Footer Start -->
     <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s">
@@ -496,11 +530,11 @@
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
+    <div class="container-fluid copyright bg-light py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <a href="#" class="text-primary mb-0 display-6"><img src="img/mf-logo.png" title="logo" width="150"
+                    <a href="#" class="text-primary mb-0 display-6"><img src="white-logo.png" title="logo" width="150"
                             alt="mediaforumdigital"></a>
                 </div>
                 <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
@@ -513,14 +547,14 @@
                         href="https://www.linkedin.com/company/p-l-mediaforum-pvt-ltd"><i
                             class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-md-4 my-auto text-center text-md-end text-white">
-                    Designed By <a class="border-bottom" href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
+                <div class="col-md-4 my-auto text-center text-md-end text-dark">
+                    Designed By <a class="border-bottom" style="color: #005f52;"
+                        href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
-
 
 
     <!-- Back to Top -->

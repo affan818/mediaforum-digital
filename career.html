@@ -27,207 +27,50 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <style>
-        .client-logo-section {
-            overflow: hidden;
+        .career-card {
             background-color: #fff;
-            padding: 30px 0;
-            border-top: 2px solid black;
-            border-bottom: 2px solid black;
+            border: 1px solid #eaeaea;
+            transition: all 0.3s ease;
+            border-radius: 1rem;
         }
 
-        .logo-slider {
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
+        .career-card:hover {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
         }
 
-        .logo-track {
-            display: flex;
-            animation: scroll 20s linear infinite;
-        }
-
-        .logo {
-            flex: 0 0 auto;
-            width: 150px;
-            margin: 0 20px;
-        }
-
-        .logo img {
-            width: 150px;
-            height: 150px;
-            display: block;
-        }
-
-        /* Scrolling animation */
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-
-        /* Main Hiring Section Style */
-        .hiring-section {
-            padding: 50px;
-            text-align: center;
-            background-color: #f7f7f7;
-            border-radius: 10px;
-        }
-
-        /* Heading Style */
-        .hiring-heading {
-            font-size: 3.2em;
-            color: #333;
-            margin-bottom: 50px;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-        }
-
-        /* Container for Cards */
-        .hiring-cards-wrapper {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            gap: 30px;
-        }
-
-        /* Individual Card Style */
-        .hiring-card-container {
-            width: 100%;
-            max-width: 380px;
-            height: 500px;
-            padding: 30px;
-            background: #fff;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border-radius: 15px;
-            text-align: center;
-            position: relative;
-            animation: slideIn 0.6s ease-out;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            overflow: hidden;
-        }
-
-        .hiring-card-container:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Job Title Style */
-        .hiring-card-title {
-            margin: 15px 0;
-            font-weight: 800;
-            text-transform: capitalize;
+        .position-title {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #1f1f1f;
         }
 
-        /* Job Description Style */
-        .hiring-card-description {
-            line-height: 1.8;
-            margin-bottom: 25px;
-            padding: 0 15px;
-            font-weight: 400;
-            flex-grow: 1;
-            overflow: hidden;
+        .position-location {
             font-size: 0.95rem;
-            color: #333;
+            color: #888;
         }
 
-        /* Apply Now Button Style */
-        .apply-now-button {
-            background-color: #000;
-            color: #fff;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 30px;
-            font-size: 1.2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-            text-transform: uppercase;
+        .position-summary {
+            color: #444;
+            margin-top: 0.5rem;
+        }
+
+        .apply-link {
+            font-weight: 600;
+            color: #005f52;
             text-decoration: none;
-            align-self: center;
+            font-size: 0.95rem;
         }
 
-        .apply-now-button:hover {
-            background-color: #333;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Slide In Animation */
-        @keyframes slideIn {
-            from {
-                transform: translateY(-30px);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateY(0);
-                opacity: 1;
-            }
-        }
-
-        /* Responsive Design for Larger Screens */
-        @media (max-width: 1200px) {
-            .hiring-cards-wrapper {
-                justify-content: space-around;
-            }
-
-            .hiring-card-container {
-                max-width: 45%;
-            }
-        }
-
-        /* Medium Screen (Tablet) Adjustment */
-        @media (max-width: 768px) {
-            .hiring-card-container {
-                max-width: 90%;
-                height: auto;
-                /* Make the card height auto on smaller screens */
-            }
-
-            .hiring-heading {
-                font-size: 2.5em;
-            }
-
-            .apply-now-button {
-                font-size: 1.1em;
-                padding: 12px 25px;
-            }
-        }
-
-        /* Small Screen (Mobile) Adjustment */
-        @media (max-width: 480px) {
-            .hiring-heading {
-                font-size: 2em;
-            }
-
-            .hiring-card-title {
-                font-size: 1.6em;
-            }
-
-            .hiring-card-description {
-                font-size: 1.1em;
-            }
-
-            .apply-now-button {
-                font-size: 1em;
-                padding: 10px 20px;
-            }
+        .apply-link:hover {
+            color: #003d36;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -319,13 +162,17 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
     <!-- Custom Navbar End -->
 
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid page-header pt-5 pb-0">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">A family that grows together and stays together.
+            <h1 class="display-2 text-white mb-4 animated slideInDown" style="font-family: Le Major;">A family that
+                <span style="font-family:Playwrite AU QLD">grows together</span> and <span
+                    style="font-family:Playwrite AU QLD">
+                    stays together.
+                </span>
             </h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-light">Home</a></li>
                     <li class="breadcrumb-item text-white" aria-current="page">Career</li>
                 </ol>
             </nav>
@@ -333,81 +180,69 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
     </div>
     <!-- Page Header End -->
 
+    <!-- Career Section -->
+    <section class="career-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="font-family: 'Le Major'; color: #005f52;">
+                Join <span style="font-family: Playwrite AU QLD;">Our</span> Team
+            </h2>
 
-    <div class="hiring-section">
-        <h2 class="hiring-heading pb-0">We Are Hiring</h2>
-        <h2 class="pt-0">Let's Connect Together</h2>
-        <!-- Cards Container -->
-        <div class="container py-5">
             <div class="row g-4">
-                <!-- Card 1 -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="hiring-card-container h-100 p-4 bg-light rounded shadow-sm text-center">
-                        <h3 class="hiring-card-title mb-3">Content Writer - Creative Storyteller</h3>
-                        <p class="hiring-card-description">
-                            Craft compelling narratives and engaging content across platforms to enhance brand voice and
-                            connect emotionally with the audience.
-                        </p>
-                        <a
-                            href="https://wa.me/918007337105?text=I%20am%20interested%20in%20applying%20for%20the%20Content%20Writer%20position.">
-                            <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-2 mt-4">Apply
-                                Now</button>
-                        </a>
-                    </div>
-                </div>
+                <!-- Career Card -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="career-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="p-4">
+                            <h5 class="position-title mb-2" style="font-family: 'Urbanist'; color: #005f52;">
+                                Graphics Designer (2+ Years)
+                            </h5>
+                            <p class="position-location mb-2" style="font-family: 'Playwrite AU QLD'; color: #555;">
+                                📍 Nagpur, Maharashtra
+                            </p>
+                            <p class="position-summary" style="font-family: 'Urbanist'; font-size: 0.95rem;">
+                                Create eye-catching designs for web, print, and social media. Shape our visual identity
+                                with
+                                creative flair and design skills.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="badge bg-light text-dark px-3 py-2 rounded-pill"
+                                    style="font-size: 0.85rem;">
+                                    Full Time
+                                </span>
+                                <a href="https://wa.me/918007337105?text=I%20am%20interested%20in%20applying%20for%20the%20Graphics%20Designer%20position."
+                                    class="apply-link">Apply Now →</a>
+                            </div>
+                        </div>
 
-                <!-- Card 2 -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="hiring-card-container h-100 p-4 bg-light rounded shadow-sm text-center">
-                        <h3 class="hiring-card-title mb-3">Video Editor (2+ Years)</h3>
-                        <p class="hiring-card-description">
-                            Edit and produce high-quality video content. Use transitions, effects, and strong
-                            storytelling to elevate brand content.
-                        </p>
-                        <a
-                            href="https://wa.me/918007337105?text=I%20am%20interested%20in%20applying%20for%20the%20Video%20Editor%20position.">
-                            <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-2 mt-4">Apply
-                                Now</button>
-                        </a>
                     </div>
                 </div>
-
-                <!-- Card 3 -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="hiring-card-container h-100 p-4 bg-light rounded shadow-sm text-center">
-                        <h3 class="hiring-card-title mb-3">Graphics Designer (2+ Years)</h3>
-                        <p class="hiring-card-description">
-                            Create eye-catching designs for web, print, and social media. Shape our visual identity with
-                            creative flair and design skills.
-                        </p>
-                        <a
-                            href="https://wa.me/918007337105?text=I%20am%20interested%20in%20applying%20for%20the%20Graphics%20Designer%20position.">
-                            <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-2 mt-4">Apply
-                                Now</button>
-                        </a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="career-card shadow-sm border-0 rounded-4 h-100">
+                        <div class="p-4">
+                            <h5 class="position-title mb-2" style="font-family: 'Urbanist'; color: #005f52;">
+                                SEO Expert
+                            </h5>
+                            <p class="position-location mb-2" style="font-family: 'Playwrite AU QLD'; color: #555;">
+                                📍 Nagpur, Maharashtra
+                            </p>
+                            <p class="position-summary" style="font-family: 'Urbanist'; font-size: 0.95rem;">
+                                Boost organic visibility by auditing websites, developing SEO strategies, and optimizing
+                                on-page and off-page elements to improve rankings and drive traffic.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center mt-4">
+                                <span class="badge bg-light text-dark px-3 py-2 rounded-pill"
+                                    style="font-size: 0.85rem;">
+                                    Full Time
+                                </span>
+                                <a href="https://wa.me/918007337105?text=I%20am%20interested%20in%20applying%20for%20the%20SEO%20Expert%20position."
+                                    class="apply-link">Apply Now →</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <!-- Card 4 -->
-                <div class="col-12 col-sm-6 col-lg-3">
-                    <div class="hiring-card-container h-100 p-4 bg-light rounded shadow-sm text-center">
-                        <h3 class="hiring-card-title mb-3">Content Creator</h3>
-                        <p class="hiring-card-description">
-                            Develop content for blogs, social media & videos. Drive engagement and brand awareness with
-                            creativity.
-                        </p>
-                        <a
-                            href="https://wa.me/918007337105?text=I%20am%20interested%20in%20applying%20for%20the%20Content%20Creator%20position.">
-                            <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-2 mt-4">Apply
-                                Now</button>
-                        </a>
-                    </div>
-                </div>
+                <!-- Duplicate the card structure for more roles -->
             </div>
         </div>
-
-
-    </div>
+    </section>
 
     <!-- Footer Start -->
     <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s">
@@ -463,11 +298,11 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
 
 
     <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
+    <div class="container-fluid copyright bg-light py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <a href="#" class="text-primary mb-0 display-6"><img src="img/mf-logo.png" title="logo" width="150"
+                    <a href="#" class="text-primary mb-0 display-6"><img src="white-logo.png" title="logo" width="150"
                             alt="mediaforumdigital"></a>
                 </div>
                 <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
@@ -480,8 +315,9 @@ Digital, Nagpur’s top agency for SEO, SMM, and more. Get a free quote today!">
                         href="https://www.linkedin.com/company/p-l-mediaforum-pvt-ltd"><i
                             class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-md-4 my-auto text-center text-md-end text-white">
-                    Designed By <a class="border-bottom" href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
+                <div class="col-md-4 my-auto text-center text-md-end text-dark">
+                    Designed By <a class="border-bottom" style="color: #005f52;"
+                        href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
                 </div>
             </div>
         </div>
