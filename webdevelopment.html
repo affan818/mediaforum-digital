@@ -34,55 +34,36 @@
     <link href="css/style.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap" rel="stylesheet">
     <style>
-        .service-box {
-            background-color: #000;
-            padding: 40px;
-            border-radius: 12px;
-            color: #fff;
-            max-width: 400px;
-            margin: auto;
-        }
-
-        .service-box h2 {
-            font-size: 2rem;
-            margin-bottom: 30px;
-            text-align: center;
-            color: #fff;
-        }
-
-        .service-list {
-            text-align: left;
-        }
-
-        .service-list a {
-            display: block;
-            color: #fff;
-            font-size: 1.2rem;
-            margin: 12px 0;
+        .service-detail-section .list-group-item a {
             position: relative;
-            text-decoration: none;
+            display: inline-block;
             transition: color 0.3s ease;
         }
 
-        .service-list a::after {
+        .service-detail-section .list-group-item a::after {
             content: '';
             position: absolute;
-            bottom: 0;
-            left: 0;
+            width: 0;
             height: 2px;
-            width: 0%;
-            background-color: #fdf001;
-            /* red underline */
+            display: block;
+            margin-top: 5px;
+            right: 0;
+            background: #005f52;
+            /* Your theme color */
             transition: width 0.3s ease;
+            transition-delay: 0.1s;
+            left: 0;
+            bottom: -3px;
         }
 
-        .service-list a:hover::after {
+        .service-detail-section .list-group-item a:hover::after {
             width: 100%;
         }
 
-        .service-list a:hover {
-            color: #fdf001;
+        .service-detail-section .list-group-item a:hover {
+            color: #005f52;
         }
     </style>
 </head>
@@ -143,7 +124,8 @@
                                 <li><a class="dropdown-item"
                                         href="/shopify_digital-marketing-companies-in-nagpur">Shopify Dev</a></li>
                                 <li><a class="dropdown-item"
-                                        href="/influencer_performance-marketing-agency-in-nagpur">Influencer Mktg</a>
+                                        href="/influencer_performance-marketing-agency-in-nagpur">Influencer
+                                        Marketing</a>
                                 </li>
                                 <li><a class="dropdown-item" href="/eventmarketing_digital-marketing-services">Event
                                         Marketing</a></li>
@@ -174,15 +156,18 @@
     </header>
     <!-- Custom Navbar End -->
 
+
     <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5">
+    <div class="container-fluid page-header pt-5 pb-0">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-white mb-4 animated slideInDown">Crafting Websites That Speak Your Brand’s
-                Language.</h1>
+            <h1 class="display-2 text-white mb-4 animated slideInDown" style="font-family: Le Major;">Crafting Websites
+                <span style="font-family:Playwrite AU QLD">That Speak Your Brand’s
+                    Language.</span>
+            </h1>
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb justify-content-center mb-0 animated slideInDown">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item text-white" aria-current="page">Website Development</li>
+                    <li class="breadcrumb-item"><a href="index.html" class="text-light">Home</a></li>
+                    <li class="breadcrumb-item text-white" aria-current="page">Web Development</li>
                 </ol>
             </nav>
         </div>
@@ -190,35 +175,36 @@
     <!-- Page Header End -->
 
 
+
+
     <!-- Services Start -->
-    <div class="container-fluid services py-5">
-        <div class="container text-center py-5">
-            <div class="text-center mb-5 wow fadeInUp" data-wow-delay=".3s">
-                <h5 class="mb-2 px-3 py-1 text-dark rounded-pill d-inline-block border border-2 border-primary">Our
-                    Services</h5>
-                <h2 class="display-5">Turning Web traffic into Loyal Customers!</h2>
+    <section class="service-detail-section py-5" style="background-color: #f9f9f9;">
+        <div class="container py-5 ">
+            <div class="mb-5 text-center" data-aos="fade-up">
+                <h2 class="section-subtitle">Web Development</h2>
             </div>
-            <div class="row g-5 d-flex justify-content-center">
-                <div class="col-lg-8 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="d-flex flex-row flex-column align-items-start">
-                        <img src="img/services/webdevelopment.jpg" alt="paid-advertising"
-                            class="img-fluid me-md-4 mb-3 mb-md-0"
-                            style="border-radius: 10px; float: left; height: 400px;">
-                        <div>
-                            <h2 style="text-align: left;">Transform Your Online Identity with the Best Website Design
-                                Agency in Nagpur!
-                            </h2>
-                            <p style="text-align: justify;">While we operate as a leading <b>website design agency in
-                                    Nagpur</b>, Media Forum specialises in site design, serving businesses with
-                                stunning,
-                                easy-to-navigate websites. From a design that helps the site adapt to different user
-                                interfaces to navigation that makes the site easy to use, we ensure we give you the
-                                best.
-                            </p>
-                            <p style="text-align: justify;">Give your website the best look and appeal with the top
-                                <b>website design agency in Nagpur now!</b>
-                            </p>
-                        </div>
+            <div class="row g-5">
+
+                <!-- Left: Service Details -->
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow rounded-4 p-4">
+                        <img src="img/services/webdevelopment.jpg" alt="Service Image" class="img-fluid rounded mb-4">
+                        <h2 style="font-family: 'Le Major'; color: #005f52;">Turning Web traffic into <span
+                                style="font-family: Playwrite AU QLD;">Loyal Customers!</span>
+
+                        </h2>
+                        <p class="mt-3"
+                            style="font-family: 'Urbanist'; font-size: 1rem; color: #444; text-align: justify;">While we
+                            operate as a leading <b> website design agency in Nagpur</b>, Media Forum specialises in
+                            site design, serving businesses with stunning, easy-to-navigate websites. From a design that
+                            helps the site adapt to different user interfaces to navigation that makes the site easy to
+                            use, we ensure we give you the best.
+                            <br> <br>
+                            Give your website the best look and appeal with the top <b>website design agency in Nagpur
+                                now!</b>
+                        </p>
+
+
                         <a href="contact.html">
                             <button type="button" class="btn btn-primary border-0 rounded-pill px-4 py-3 mt-5">Let's
                                 Connect</button>
@@ -226,31 +212,53 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="service-box">
-                        <h2>Our Services</h2>
-                        <div class="service-list">
-                            <a href="paidads.html">Paid Advertising</a>
-                            <a href="searchengine.html">Search Engine Optimization</a>
-                            <a href="socialmedia.html">Social Media Marketing</a>
-                            <a href="webdevelopment.html">Website Development</a>
-                            <a href="printmedia.html">Print Media Service</a>
-                            <a href="production.html">Production</a>
-                            <a href="shopify.html">Shopify Development</a>
-                            <a href="influencer.html">Influencer Marketing</a>
-                            <a href="eventmarketing.html">Event Marketing</a>
-                            <a href="branding.html">Branding Solution</a>
-                        </div>
+                <!-- Right: Services List -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow rounded-4 p-4">
+                        <h5 style="font-family: 'Urbanist'; color: #005f52;" class="mb-3">Our Services</h5>
+                        <ul class="list-group list-group-flush" style="font-family: 'Playwrite AU QLD';">
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="paidads.html" class="text-decoration-none text-dark">Paid Advertising</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="searchengine.html" class="text-decoration-none text-dark">Search Engine
+                                    Optimization</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="socialmedia.html" class="text-decoration-none text-dark">Social Media
+                                    Marketing</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="webdevelopment.html" class="text-decoration-none text-dark">Website
+                                    Development</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="printmedia.html" class="text-decoration-none text-dark">Print Media Service</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="production.html" class="text-decoration-none text-dark">Production</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="shopify.html" class="text-decoration-none text-dark">Shopify Development</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="eventmarketing.html" class="text-decoration-none text-dark">Event Marketing</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="influencer.html" class="text-decoration-none text-dark">Influencer
+                                    Marketing</a>
+                            </li>
+                            <li class="list-group-item border-0 px-0 py-2">
+                                <a href="branding.html" class="text-decoration-none text-dark">Branding Solution</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
             </div>
-
-
         </div>
-    </div>
+    </section>
     <!-- Services End -->
-
 
     <!-- Footer Start -->
     <div class="container-fluid footer wow fadeIn" data-wow-delay=".3s">
@@ -260,8 +268,10 @@
                 <!-- Section 1: Information -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-item">
-                        <h4 class="text-white fw-bold mb-4">Information</h4>
-                        <p style="text-align: justify;">Mediaforum Digital- Best Digital Marketing Company in Nagpur
+                        <h4 class="text-white fw-bold mb-4" style="font-family: 'LeMajor', 'Playfair Display', serif;">
+                            Information</h4>
+                        <p style="font-family: 'Urbanist', sans-serif;text-align: justify;">Mediaforum Digital- Best
+                            Digital Marketing Company in Nagpur
                             specializes in 360 Degree. SEO,
                             Email Marketing, Website Design, SEO, Content Writing, Analytics & reports.</p>
                         <p class="mb-0"><a class="" href="https://mediaforumdigital.com">PL Mediaforum Digital </a>
@@ -273,8 +283,10 @@
                 <!-- Section 2: Address & Contact -->
                 <div class="col-lg-4 col-md-6">
                     <div class="footer-item">
-                        <h4 class="text-white fw-bold mb-4">Contact Us</h4>
-                        <p style="text-align: justify;"><i class="fa fa-map-marker-alt me-2"></i>4th Floor, Plot. No.
+                        <h4 class="text-white fw-bold mb-4" style="font-family: 'LeMajor', 'Playfair Display', serif;">
+                            Contact Us</h4>
+                        <p style="font-family: 'Urbanist', sans-serif; text-align: justify;"><i
+                                class="fa fa-map-marker-alt me-2"></i>4th Floor, Plot. No.
                             37,
                             Beside Chaitanya Home Stay,
                             39,
@@ -288,7 +300,8 @@
                 <!-- Section 3: Google Map -->
                 <div class="col-lg-4 col-md-12">
                     <div class="footer-item">
-                        <h4 class="text-white fw-bold mb-4">Our Location</h4>
+                        <h4 class="text-white fw-bold mb-4" style="font-family: 'LeMajor', 'Playfair Display', serif;">
+                            Our Location</h4>
                         <div class="ratio ratio-4x3">
                             <iframe width="370" height="285" id="gmap_canvas"
                                 src="https://maps.google.com/maps?q=pl%20mediaforum&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
@@ -303,13 +316,12 @@
     <!-- Footer End -->
 
 
-
     <!-- Copyright Start -->
-    <div class="container-fluid copyright bg-dark py-4">
+    <div class="container-fluid copyright bg-light py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <a href="#" class="text-primary mb-0 display-6"><img src="img/mf-logo.png" title="logo" width="150"
+                    <a href="#" class="text-primary mb-0 display-6"><img src="white-logo.png" title="logo" width="150"
                             alt="mediaforumdigital"></a>
                 </div>
                 <div class="col-md-4 copyright-btn text-center text-md-start mb-3 mb-md-0 flex-shrink-0">
@@ -322,14 +334,14 @@
                         href="https://www.linkedin.com/company/p-l-mediaforum-pvt-ltd"><i
                             class="fab fa-linkedin-in"></i></a>
                 </div>
-                <div class="col-md-4 my-auto text-center text-md-end text-white">
-                    Designed By <a class="border-bottom" href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
+                <div class="col-md-4 my-auto text-center text-md-end text-dark">
+                    Designed By <a class="border-bottom" style="color: #005f52;"
+                        href="https://mediaforumdigital.com/">PL Mediaforum Digital</a>
                 </div>
             </div>
         </div>
     </div>
     <!-- Copyright End -->
-
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>

@@ -1,4 +1,10 @@
 /* Spinner Loader Box Animation */
+/* Prevent horizontal scroll */
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
 .loader {
   width: 48px;
   height: 48px;
@@ -945,7 +951,7 @@
 
 /*** Footer Start ***/
 .footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/carousel-2.jpg) center center no-repeat;
   background-size: cover;
   color: rgba(255, 255, 255, 0.7);
