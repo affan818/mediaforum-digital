@@ -359,19 +359,19 @@ logo: ""
                 <h2 class="section-title">Our <span style="font-family:Playwrite AU QLD">Growth</span> Metrics</h2>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
                     <div class="counter-card">
                         <h2 class="counter" id="leads-counter">0</h2>
                         <p class="metric">Leads Generated</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="500">
                     <div class="counter-card">
                         <h2 class="counter" id="spend-counter">0</h2>
                         <p class="metric">Advertising Spend</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mx-auto" data-aos="zoom-in" data-aos-delay="500">
+                <div class="col-lg-4 col-md-6 mx-auto" data-aos="zoom-in" data-aos-delay="700">
                     <div class="counter-card">
                         <h2 class="counter" id="clients-counter">0</h2>
                         <p class="metric">Happy Clients</p>
@@ -382,12 +382,12 @@ logo: ""
     </section>
 
 
-
-
+    <!-- client auto crousel  -->
+    <!-- 
     <div class="client-logo-section">
         <div class="logo-slider">
             <div class="logo-track">
-                <!-- Duplicate logos for infinite effect -->
+               
                 <div class="logo"><img src="img/client/devprath.png" alt="Client 1"></div>
                 <div class="logo"><img src="img/client/gandhi.png" alt="Client 2"></div>
                 <div class="logo"><img src="img/client/goverdhan.png" alt="Client 3"></div>
@@ -401,7 +401,7 @@ logo: ""
                 <div class="logo"><img src="img/client/rudra.png" alt="Client 12"></div>
                 <div class="logo"><img src="img/client/prasanna.png" alt="Client 13"></div>
                 <div class="logo"><img src="img/client/shivganga.png" alt="Client 14"></div>
-                <!-- Duplicates for smooth loop -->
+        
                 <div class="logo"><img src="img/client/devprath.png" alt="Client 1"></div>
                 <div class="logo"><img src="img/client/gandhi.png" alt="Client 2"></div>
                 <div class="logo"><img src="img/client/goverdhan.png" alt="Client 3"></div>
@@ -417,7 +417,7 @@ logo: ""
                 <div class="logo"><img src="img/client/shivganga.png" alt="Client 14"></div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
@@ -861,24 +861,35 @@ logo: ""
     <a href="#" class="btn btn-primary rounded-circle border-3 back-to-top"><i class="fa fa-arrow-up"></i></a>
     <script src="altText.js" defer></script>
     <script>
-        function animateCounter(id, target) {
+        function animateCounter(id, target, formatFn = null) {
             let el = document.getElementById(id);
             let count = 0;
             const interval = setInterval(() => {
                 if (count >= target) {
                     clearInterval(interval);
-                    el.innerText = target.toLocaleString();
+                    el.innerText = formatFn ? formatFn(target) : target.toLocaleString();
                 } else {
                     count += Math.ceil(target / 100);
-                    el.innerText = count.toLocaleString();
+                    el.innerText = formatFn ? formatFn(count) : count.toLocaleString();
                 }
             }, 30);
+        }
+
+        // Format function for Crores
+        function formatToCrores(num) {
+            if (num >= 10000000) {
+                return (num / 10000000).toFixed(1).replace(/\.0$/, '') + ' Cr+';
+            } else if (num >= 100000) {
+                return (num / 100000).toFixed(1).replace(/\.0$/, '') + ' Lakh+';
+            } else {
+                return num.toLocaleString();
+            }
         }
 
         // When page loads
         window.addEventListener("DOMContentLoaded", () => {
             animateCounter("leads-counter", 50000);
-            animateCounter("spend-counter", 2000000);
+            animateCounter("spend-counter", 20000000, formatToCrores); // 2 Cr+
             animateCounter("clients-counter", 150);
         });
     </script>
